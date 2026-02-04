@@ -51,14 +51,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-``>
-
-🔁 Revisa solo una cosa importante:  
-- Si tu app NO está en `my-app` sino en la raíz, elimina los `cd my-app` y pon `path: build`.
-
-Haz commit del workflow:
-
-```bash
-git add .github/workflows/deploy-react.yml
-git commit -m "Add deployment workflow for React app with Copilot"
-git push origin main
